@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.9.RELEASE'
+		springBootVersion = '1.5.6.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -10,11 +10,10 @@ buildscript {
 	}
 }
 
-apply plugin: 'groovy'
+apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
-group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -27,8 +26,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-amqp')
 	compile('org.springframework.retry:spring-retry')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.codehaus.groovy:groovy')
+//	compile('de.chandre.quartz:spring-boot-starter-quartz:1.0.1')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 }

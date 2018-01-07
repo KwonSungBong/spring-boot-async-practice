@@ -1,10 +1,22 @@
 version: '2.1'
 
 services:
-  mysqldb:
+  mysqldb1:
     image: mysql:latest
     ports:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: scala
+      MYSQL_DATABASE: task_service
+
+  mysqldb2:
+    image: mysql:latest
+    ports:
+      - 3308:3306
+    volumes:
+#       - ./second/data:/var/lib/mysql
+       - ./second/init:/docker-entrypoint-initdb.d/:ro
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: task_service
+

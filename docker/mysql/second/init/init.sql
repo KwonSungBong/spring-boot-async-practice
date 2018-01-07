@@ -1,0 +1,7 @@
+CREATE TABLE task_test (
+  id MEDIUMINT NOT NULL AUTO_INCREMENT,
+  name VARCHAR (255),
+  task VARCHAR (255),
+  test VARCHAR (255),
+  PRIMARY KEY (id)
+);

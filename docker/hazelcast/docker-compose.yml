@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  hazelcast:
+    image: hazelcast/hazelcast:latest
+    ports:
+      - "5701:5701/tcp"
+  hazelcast-management:
+    image: hazelcast/management-center:latest
+    ports:
+      - "8080:8080/tcp"

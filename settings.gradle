@@ -1,6 +1,5 @@
 rootProject.name = 'spring-boot-async-practice'
 
-include 'retry-service'
 include 'async-service'
 include 'mutil-task-service'
 include 'rabbit-mq:first-simple:sender-service'

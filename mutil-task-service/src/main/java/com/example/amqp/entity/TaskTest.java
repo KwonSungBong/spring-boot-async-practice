@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 @Entity
 @Data
-public class TaskTest  implements Serializable {
+public class TaskTest implements Serializable {
 
     public static final int TYPE_ID = 10000;
 

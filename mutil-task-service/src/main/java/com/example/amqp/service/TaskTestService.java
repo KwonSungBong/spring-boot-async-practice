@@ -61,4 +61,12 @@ public class TaskTestService {
         cacheRepository.saveList(taskTests);
     }
 
+    public List<TaskTest> findAll() {
+        return jdbcTemplateRepository.findAll();
+    }
+
+    public int insertOnDuplicate() {
+        return jdbcTemplateRepository.insertOnDuplicate();
+    }
+
 }

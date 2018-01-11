@@ -43,4 +43,14 @@ public class ApiController {
         return "cache";
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/find")
+    public List<TaskTest> findAll() {
+        return taskTestService.findAll();
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/save")
+    public int insertOnDuplicate() {
+        return taskTestService.insertOnDuplicate();
+    }
+
 }

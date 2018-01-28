@@ -1,7 +1,8 @@
 rootProject.name = 'spring-boot-async-practice'
 
 include 'async-service'
-include 'mutil-task-service'
+include 'task-service'
+include 'parallel-service'
 include 'rabbit-mq:first-simple:sender-service'
 include 'rabbit-mq:first-simple:receiver-service'
 include 'rabbit-mq:second-queue:migration1-service'
